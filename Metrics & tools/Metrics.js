@@ -34,4 +34,14 @@ There are two type of matrics
         5. custom Metrics
             create your own 
 
+
+===========================================================================================
+
+Goals 
+
+   1. LCP: 2.5s - 4.0s
+   2. FID: 100ms -  - First input delay
+   3. CLS: 0.1 - 0.25s - Content layout shift
+
+    https://pagespeed.web.dev/ free tool for get report and it will give us from google UX report
 */  
