@@ -1,0 +1,16 @@
+HTTP/1.1
+
+    * one request per TCP connection
+    * Limited number of parallel requests to ther server
+    * GZIP Encoding accepted
+
+HTTP/2 
+    * Performance from scratch
+    * Header Compression
+    * TCP connection reuse 
+    * Push to Cache ❌
+
+HTTP/3 
+    * Transport protocol over UDP
+    * Reduces latency and connection messages
+    * HTTP/2 Interface with TLS
