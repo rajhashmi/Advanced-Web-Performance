@@ -27,5 +27,6 @@ What happen we visit a url let's understand this
 6. HTTP Response - download
 7. Browser HTML parsing
 8. resourse discovery 
+9. render (layout,  paint)
 */ 
 
