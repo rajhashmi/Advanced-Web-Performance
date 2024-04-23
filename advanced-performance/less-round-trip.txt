@@ -44,3 +44,26 @@ By preloading these resources early, they can be available and ready for use whe
 3. Early hints
 
 when we send a request to server, server will do something and then it will send file to client tis gonna take some time near 150-200ms what if we tell client early that your request gonna accept in means time you download another resources, we can do this using early hints by using 103 status code this is not supported in every browser, the non-supporter browser will ignore status code.
+
+
+4. HTTP/3
+
+Do we should always use TCP connections.... NO we should use UDP as well but where....? for live Streams in live video loss of frame is fine but we can reduce this by using some ziping tricks 
+
+Transport protocol over UDP
+• Reduces latency and connection
+messages
+• HTTP/2 Interface with TLS
+
+Use Zopfli
+• Save 3-8% data transfer with GZIP
+• It’s ~80x slower (in ziping in server side and fast in unziping in elient side) we can make cache of the file 
+
+
+we have better option 
+
+Use Brotli
+
+Save ~25% data transfer compared
+with GZIP
+• Check Encoding Header
