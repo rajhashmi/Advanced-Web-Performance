@@ -1,0 +1,46 @@
+let's dive deeper and understand how server sends first packet to client after TCP connention server send 14.6KiB Kibibytes every round which means in each rounds tcp hold 14.KiB size of packet 
+
+1 Kibibytes = 1024 bytes.
+1 KiloBytes = 1000 bytes.
+
+our goal is to make less rounds what if we make only one round for landing page by using inline css and script tag 
+
+1. use inline css 
+2. in html script tag
+3. gzip
+4. use only necessary file to show 
+
+we have to do this in one trip in 14.Kib 
+
+
+===========================================
+
+Aviod http to https redirect.
+
+by default browser use http and need to use https use HSTS (HTTP Strict Trans port Security)
+
+we can add a property in Header.
+
+================================================
+
+
+2. Preloading
+
+Preloading is done using the <link> element in HTML with the rel="preload" attribute.
+This allows developers to specify resources (e.g., images, stylesheets, scripts, fonts) that should be loaded as soon as possible, even before they are requested or needed.
+By preloading these resources early, they can be available and ready for use when needed, reducing latency and wait times
+
+<link rel="preload" href="styles.css" as="style">
+
+
+
+<link rel="preload" as="image"
+ href="hero.jpg" fetchpriority="high">
+<img src="otherimage.jpg" fetchpriority="low">
+
+
+=======================================================
+
+3. Early hints
+
+when we send a request to server, server will do something and then it will send file to client tis gonna take some time near 150-200ms what if we tell client early that your request gonna accept in means time you download another resources, we can do this using early hints by using 103 status code this is not supported in every browser, the non-supporter browser will ignore status code.
