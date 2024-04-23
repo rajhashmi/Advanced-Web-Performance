@@ -1,0 +1,19 @@
+Resourse Discovery file
+
+Cache Header per file
+
+    * Absolute expiration date (1.0)
+        when we send file to client we can set a time in header that when we want to expire this file till then save this file in browser Cache time like 25th april 2024 5:15 pm 
+    
+    * Relative expiration date (1.1);
+        same but style of setting time is different like 12th month of 2024 
+    
+
+    browser needs a Resourse
+ 1] It check the cache 
+    A] Cache MISS: we go the network
+    B] Cache HIT:
+        i] it's expired
+           conditional request: 1) Not modified (Update cache header) 2) ok new file.
+        ii] It's not expired
+            we can use that file from the caches
