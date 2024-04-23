@@ -1,0 +1,1 @@
+Service worker :-> in simple term Service Worker is a server in user mobile we can save cache in Service worker, if user want to any file it will go into service worker and take that file if the will is expired then ther service worker will contact to server and download and save in cache then send it to client 
