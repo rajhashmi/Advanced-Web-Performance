@@ -67,3 +67,47 @@ Use Brotli
 Save ~25% data transfer compared
 with GZIP
 • Check Encoding Header
+
+
+5. Using modern Images Formats
+
+Modern Image Formats
+• SVG
+• WebP, AVIF, Guetzli JPEG, Zopfli PNG
+• Muted videos instead of GIFs
+
+
+6. Modern Cache Control 
+
+We know that we can store a file in cache and update it latter what if the file never gonna change so the contional should not use right we need to chenge in header. 
+
+* Cache-Control: immutable
+
+Modern Cache Control
+It’s a common new pattern to
+1) serve from the cache
+2) update it in the background for later
+
+Modern Cache Control :-> 
+Cache-Control: stale-while-revalidate=99
+
+7. Warming up engines
+
+• Help the browser to start ASAP
+• DNS Queries: ~100ms
+• TCP and TLS connection: ~100ms
+
+we can make handshake in early 
+
+<link rel="dns-prefetch" href="https: /newdomain.com">
+<link rel="preconnect" href="https: /newdomain.com"
+ crossorigin>
+
+
+ Preconnect:
+Purpose: Preconnect hints to the browser to establish early connections to servers, including DNS resolution, TCP handshakes, and TLS negotiations, before any requests are made to the 
+
+Preload:
+Purpose: Preload allows developers to specify resources (e.g., images, stylesheets, scripts, fonts) that should be loaded as soon as possible, even before they are explicitly requested.
+
+Purpose: Prefetch allows developers to specify resources (e.g., images, pages, data) that may be needed in the near future, but not immediately, to be loaded in advance.
