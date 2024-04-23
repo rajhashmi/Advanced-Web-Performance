@@ -1,1 +1,5 @@
 Service worker :-> in simple term Service Worker is a server in user mobile we can save cache in Service worker, if user want to any file it will go into service worker and take that file if the will is expired then ther service worker will contact to server and download and save in cache then send it to client 
+
+// when browser start parsing HTML and encounter the Resourse to download like CSS file and JavaScript file in the case of css 
+1.CSS : css is render blocking means nothing gonna render in page untill the is not parsed
+2.JavaScript: js will block parsing means when it encounter script tag it immediately parse and execute js
